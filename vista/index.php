@@ -1,10 +1,4 @@
-<DOCTYPE >
-<?php
 
-
-
-
-?>
 <html>
->
+
 </html>
