@@ -1,3 +1,10 @@
+<DOCTYPE >
 <?php
 
+
+
+
 ?>
+<html>
+>
+</html>
