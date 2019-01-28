@@ -8,11 +8,10 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
   </head>
   <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Navbar</a>
+  <nav class="navbar navbar-expand-lg navbar navbar-dark bg-primary">
+  <a class="navbar-brand" href="#">PROYECTO FINAL</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -46,6 +45,28 @@
     </form>
   </div>
 </nav>
+
+<!-- JUMBOTRON -->
+<div class="jumbotron">
+    <h1 class="display-4 ">      MEDIDAS DE TENDENCIA CENTRAL</h1>
+    <p class="lead">Realizado por: Carlosama Diana, Cabrera Lisbeth , Vásconez Erick  </p>
+        <hr class="my-4">
+  <p><strong>Ingrese los datos separados por comas a continuación:</strong> </p>
+
+
+  <!--INPUT -->
+    <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Separe por comas...." aria-label="Recipient's username" aria-describedby="button-addon2">
+ 
+        </div>
+        <button class="btn btn-primary btn-lg" type="button" id="button-addon2">Calcular</button>
+
+</div > 
+
+
+
+
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
