@@ -5,6 +5,18 @@ class Datos
 
     private $obtenerDatos;
    
+   
+    
+
+    function getCadena($cadena ){
+    
+        $datos = explode(",", $cadena);
+        return $datos; 
+   }
+
+
+
+
     public function getObtenerDatos()
     {
         return $this->$obtenerDatos;

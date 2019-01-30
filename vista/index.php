@@ -39,32 +39,28 @@
         <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
       </li>
     </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
+  
   </div>
 </nav>
 
 <!-- JUMBOTRON -->
-<div class="jumbotron">
-    <h1 class="display-4 ">      MEDIDAS DE TENDENCIA CENTRAL</h1>
-    <p class="lead">Realizado por: Carlosama Diana, Cabrera Lisbeth , Vásconez Erick  </p>
+<div class="jumbotron ">
+    <h1 class="display-4 text-center">      MEDIDAS DE TENDENCIA CENTRAL</h1>
+    <p class="lead text-center" >Realizado por: Carlosama Diana, Cabrera Lisbeth , Vásconez Erick  </p>
         <hr class="my-4">
-  <p><strong>Ingrese los datos separados por comas a continuación:</strong> </p>
+
+  </div > 
 
 
-  <!--INPUT -->
-    <div class="input-group mb-3">
-        <input type="text" class="form-control" placeholder="Separe por comas...." aria-label="Recipient's username" aria-describedby="button-addon2">
- 
-        </div>
-        <button class="btn btn-primary btn-lg" type="button" id="button-addon2">Calcular</button>
-
-</div > 
-
-
-
+<form class="form text-center " action="../controlador/datosController.php" method="post">
+    <div class="form-group">
+        <label for="">  <p class="text-center"><strong>INGRESE LOS DATOS SEPARADOS POR COMAS :</strong> </p>
+      </label>
+      <input type="text" autofocus required  name ="cadena" class="form-control text-center" id="cad" aria-describedby="" placeholder=" 1,2,3...">
+  </div>
+  
+        <button type="submit" class="btn btn-primary btn-lg">Calcular</button>
+</form>
 
 
     <!-- Optional JavaScript -->
