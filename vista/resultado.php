@@ -9,12 +9,16 @@
 <body>
 <?php
          include_once '../modelo/datos.php';
-                 session_start();
-                    $mensaje = $_SESSION['vector'];
+            session_start();
+          $mensaje = $_SESSION['vector'];
+          $ordenar = $_SESSION['ordenar'];
 
                     //foreach ($mensaje as $datos) {
-                         echo " <h2 style='color:red'>Debe pagar : " .join(" - ", $mensaje). "</h2>";
-                    // }
+      echo " <h2 style='color:red'>datos : " .join(",", $mensaje). "</h2>";
+                  //  foreach ($ordenar as $datos) {
+              
+      echo " <h2 style='color:blue'>ordenados : " .join(",",$ordenar). "</h2>";
+                     //    }
             ?>
 
 
