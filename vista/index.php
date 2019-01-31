@@ -10,7 +10,7 @@
 
   </head>
   <body>
-  <nav class="navbar navbar-expand-lg navbar navbar-dark bg-primary">
+  <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
   <a class="navbar-brand" href="#">PROYECTO FINAL</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -19,13 +19,13 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="../vista/index.php">Principal<span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="../vista/index.php">Home<span class="sr-only">(current)</span></a>
       </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="">Cuantiles</a>
+      <li class="nav-item ">
+        <a class="nav-link" aria-disabled="true" href="">Cuantiles</a>
       </li>
-      <li class="nav-item dropdown active">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <li class="nav-item dropdown  ">
+        <a class="nav-link dropdown-toggle disabled" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
           Graficas
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
