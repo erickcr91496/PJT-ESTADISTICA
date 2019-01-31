@@ -11,7 +11,9 @@ $datos =$modeloDatos->getCadena($cadena);
 
 $ordenar = $modeloDatos->ordenar($datos);
 $unicos = $modeloDatos->contar($datos);
-echo "hola<br>";
+
+$maximo = $modeloDatos->maximo($datos);
+
 // foreach ($ordenar as  $value) {
 //     echo $value." ";
 // }
@@ -19,5 +21,7 @@ echo "hola<br>";
 
 $_SESSION['vector'] = $datos;
 $_SESSION['ordenar'] = $ordenar;
+$_SESSION['max'] = $maximo;
 
-header("Location:../vista/resultado.php");
+
+header("Location:../vista/tabla.php");

@@ -47,9 +47,11 @@ class Datos
         return $l;
    }
 
-   function repetidos ()
+   function maximo ($array)
    {
-       
+       $aux = max($array);
+     
+        return $aux;
 
    }
 
