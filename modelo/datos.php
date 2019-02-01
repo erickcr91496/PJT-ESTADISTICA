@@ -63,8 +63,7 @@ class Datos
    
    function clases($array)
    {
-       //$clases= 1+(3.33)*(floor(log($contar($array),10)));
-       //$this->contar($array))
+     
        $clases= 1+(3.33) * log10($this->contar($array));
 
         $valor = floor($clases);
@@ -76,6 +75,28 @@ class Datos
        $cj = ($this->rango($array))/($this->clases($array));
        return $cj;
    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // NO UTILIZADAS TODAVIA/...........................
     public function getObtenerDatos()
