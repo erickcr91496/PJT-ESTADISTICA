@@ -28,7 +28,7 @@ class Datos
 
    }
 
-   function contar ($array)
+   function valoresUnicos ($array)
    {
        $l = array();
         for ($i=0; $i < count($array) ; $i++) { 
@@ -47,15 +47,37 @@ class Datos
         return $l;
    }
 
-   function maximo ($array)
+   function rango ($array)
    {
-       $aux = max($array);
+       $aux = max($array) - min($array);
      
         return $aux;
 
    }
+   function contar($array){
 
+        $cont= count($array);
+        return $cont;
 
+   }
+   
+   function clases($array)
+   {
+       //$clases= 1+(3.33)*(floor(log($contar($array),10)));
+       //$this->contar($array))
+       $clases= 1+(3.33) * log10($this->contar($array));
+
+        $valor = floor($clases);
+       return  $valor;
+   }
+
+   function anchoClase($array)
+   {
+       $cj = ($this->rango($array))/($this->clases($array));
+       return $cj;
+   }
+
+// NO UTILIZADAS TODAVIA/...........................
     public function getObtenerDatos()
     {
         return $this->$obtenerDatos;

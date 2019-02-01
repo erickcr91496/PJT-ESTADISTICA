@@ -13,9 +13,7 @@ and open the template in the editor.
 
                     //foreach ($mensaje as $datos) {
                   //  foreach ($ordenar as $datos) {
-              
-      //echo " <h2 style='color:blue'>ordenados : " .join(",",$ordenar). "</h2>";
-                     //    }
+
           
      //  echo " <h2 style='color:blue'>maximo : " .$maximo. "</h2>";
              
@@ -48,10 +46,10 @@ and open the template in the editor.
             <h3 class="text-center">RESULTADOS</h3>           
             <hr class="my-4">
 
-            <div class="shadow-sm p-3 mb-5 bg-white rounded text-center" >Tabla Ordenada</div>
+            <div class="shadow-sm p-3 mb-5 bg-white rounded text-center" >Datos Ordenada</div>
                     <?php
                 
-                    echo "<h2 text-center >  " .join(",", $ordenar). "</h2>";
+                    echo "<h2 class= text-center  >  " .join(",", $ordenar). "</h2>";
 
                     ?>  
 
@@ -142,9 +140,7 @@ and open the template in the editor.
                 </tbody>
             </table>
             <hr class="my-4">
-            <div class="shadow-sm p-3 mb-5 bg-white rounded">Grafico</div>
-
-        </div > 
+      
 
     </body>
 </html>
