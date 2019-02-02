@@ -9,17 +9,14 @@ and open the template in the editor.
           $mensaje = $_SESSION['vector'];
           $ordenar = $_SESSION['ordenar'];
           $maximo  = $_SESSION['max'] ;
-
+        $clases  = $_SESSION['clases'] ;
 
                     //foreach ($mensaje as $datos) {
                   //  foreach ($ordenar as $datos) {
 
           
      //  echo " <h2 style='color:blue'>maximo : " .$maximo. "</h2>";
-             
-         
-                     
-
+        
   ?>
 -->
 <html>
@@ -46,14 +43,14 @@ and open the template in the editor.
             <h3 class="text-center">RESULTADOS</h3>           
             <hr class="my-4">
 
-            <div class="shadow-sm p-3 mb-5 bg-white rounded text-center" >Datos Ordenada</div>
+            <div class="shadow-sm p-3 mb-5 bg-white rounded text-center" >Datos Ordenados</div>
                     <?php
                 
                     echo "<h2 class= text-center  >  " .join(",", $ordenar). "</h2>";
-
+                   
                     ?>  
 
-            <hr class="my-4">
+            <hr class="my-4 " >
             <div class="shadow-sm p-3 mb-5 bg-white rounded text-center" class="table-responsive ">Tabla de Inferencia</div>
             <table class="table table-striped">
                 <thead>
@@ -72,8 +69,12 @@ and open the template in the editor.
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
+
+                
+               <!--      <tr>
                         <th scope="row">Class1</th>
+                        <td>asasa</td>
+                        <td>5555</td>
                         <td></td>
                         <td></td>
                         <td></td>
@@ -82,9 +83,20 @@ and open the template in the editor.
                         <td></td>
                         <td></td>
                         <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
+                    </tr> -->
+                        
+                    <?php   
+                    //echo $fila = $_SESSION['filas'];
+                  for ($i=1; $i<=$clases ; $i++) { 
+                    echo $fila =" <tr> <th scope='row'>".$i."</th> 
+                    <td>asasa</td>
+
+                    
+                    </tr> ";
+                  }
+   
+
+                    ?>
                 </tbody>
             </table>
             <hr class="my-4">

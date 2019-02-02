@@ -69,6 +69,34 @@ class Datos
         $valor = floor($clases);
        return  $valor;
    }
+      function filasClase($array)
+   {
+       
+       // foreach ($array as $row) { 
+
+        // $fila += "<tr>".$row." <th>Class1</th>
+        //             <td>asasa</td>
+        //                  <td>5555</td>
+        //                  <td></td>
+        //                  <td></td>
+        //                  <td></td>
+        //                  <td></td>
+        //                  <td></td>
+        //                <td></td>
+        //                  <td></td>
+        //                  <td></td>
+        //                  </tr>";
+        
+                        
+        // }
+        for ($i=0; $i<$array ; $i++) { 
+
+            $fila =" <tr> <th scope=¨row¨>Class2..</th></tr> ";
+                    
+        }
+       return  $fila;
+   }
+
 
    function anchoClase($array)
    {
