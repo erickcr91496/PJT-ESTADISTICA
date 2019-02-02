@@ -99,6 +99,18 @@ and open the template in the editor.
                     ?>
                 </tbody>
             </table>
+
+
+
+
+
+
+
+
+
+
+
+            
             <hr class="my-4">
             <div class="shadow-sm p-3 mb-5 bg-white rounded" class="table-responsive">Medidas de Tendencia Central</div>
 
