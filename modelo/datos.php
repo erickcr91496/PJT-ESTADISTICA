@@ -76,7 +76,20 @@ class Datos
        return  ceil($cj);
    }
 
-   function 
+   function intervalo ($array)
+   {
+       $rango = anchoClase($array) - 1 ;
+
+        $ini = min($array)+$rango;
+
+      $intervalo =  min ($array);
+      
+        for ($i=0; $i <count($array) ; $i++) { 
+            
+        }
+            return $intervalo;
+   }
+
 
 
 

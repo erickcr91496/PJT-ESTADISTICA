@@ -10,10 +10,10 @@ $modeloDatos = new Datos();
 $datos =$modeloDatos->getCadena($cadena);
 
 $ordenar = $modeloDatos->ordenar($datos);
-$unicos = $modeloDatos->contar($datos);
+$unicos = $modeloDatos->valoresUnicos($datos);
 $clases = $modeloDatos->clases($datos);
-echo $cj = $modeloDatos->anchoClase($datos);
-////$maximo = $modeloDatos->maximo($datos);
+ $cj = $modeloDatos->anchoClase($datos);
+//$maximo = $modeloDatos->maximo($datos);
 
 //echo $rango = $modeloDatos->rango($datos);
 //echo $contar = $modeloDatos->contar($datos);
@@ -33,4 +33,4 @@ $_SESSION['clases'] = $clases;
 //$_SESSION['max'] = $maximo;
 
 
-//header("Location:../vista/tabla.php");
+header("Location:../vista/tabla.php");

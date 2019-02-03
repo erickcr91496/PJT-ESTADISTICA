@@ -9,13 +9,8 @@ and open the template in the editor.
           $mensaje = $_SESSION['vector'];
           $ordenar = $_SESSION['ordenar'];
           $maximo  = $_SESSION['max'] ;
-        $clases  = $_SESSION['clases'] ;
+            $clases  = $_SESSION['clases'] ;
 
-                    //foreach ($mensaje as $datos) {
-                  //  foreach ($ordenar as $datos) {
-
-          
-     //  echo " <h2 style='color:blue'>maximo : " .$maximo. "</h2>";
         
   ?>
 -->
@@ -69,29 +64,24 @@ and open the template in the editor.
                     </tr>
                 </thead>
                 <tbody>
-
                 
                <!--      <tr>
                         <th scope="row">Class1</th>
                         <td>asasa</td>
                         <td>5555</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                   
                         <td></td>
                     </tr> -->
                         
                     <?php   
                     //echo $fila = $_SESSION['filas'];
+                    for ($i=0; $i < ; $i++) { 
+                        # code...
+                    }
                   for ($i=1; $i<=$clases ; $i++) { 
+
                     echo $fila =" <tr> <th scope='row'>".$i."</th> 
                     <td>asasa</td>
-
-                    
                     </tr> ";
                   }
    
@@ -106,7 +96,7 @@ and open the template in the editor.
 
 
 
-
+<!--***************************CUANTILES******************************************-->
 
 
 
