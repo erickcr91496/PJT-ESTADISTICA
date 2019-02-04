@@ -10,7 +10,9 @@ and open the template in the editor.
           $ordenar = $_SESSION['ordenar'];
           $maximo  = $_SESSION['max'] ;
             $clases  = $_SESSION['clases'] ;
-
+        $cj = $_SESSION['cj'];
+        $intervalo = $_SESSION['intervalo'];
+        $fa = $_SESSION['fa'];
         
   ?>
 -->
@@ -75,16 +77,23 @@ and open the template in the editor.
                         
                     <?php   
                     //echo $fila = $_SESSION['filas'];
-                    for ($i=0; $i < ; $i++) { 
-                        # code...
-                    }
-                  for ($i=1; $i<=$clases ; $i++) { 
+                //    $min = min($ordenar);
+                //    $max =$min+$cj;
 
-                    echo $fila =" <tr> <th scope='row'>".$i."</th> 
-                    <td>asasa</td>
-                    </tr> ";
-                  }
-   
+                  //for ($i=1; $i<=$clases ; $i++)     { 
+
+                  //  echo " <tr> ";
+                                         
+                  
+                  echo $intervalo;
+
+                    
+                  //  echo "<td>$fa</td>";
+                   
+
+                  echo "</tr> ";
+                                        
+                 // }
 
                     ?>
                 </tbody>
@@ -102,7 +111,7 @@ and open the template in the editor.
 
             
             <hr class="my-4">
-            <div class="shadow-sm p-3 mb-5 bg-white rounded" class="table-responsive">Medidas de Tendencia Central</div>
+            <div class="shadow-sm p-3 mb-5 bg-white rounded text-center" class="table-responsive text-center">Medidas de Tendencia Central</div>
 
             <table class="table table-striped">
                 <thead>

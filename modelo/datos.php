@@ -15,6 +15,7 @@ class Datos
     function ordenar($array)
    {
         $aux = null;
+
         for($i=0;$i<count($array)-1;$i++){
             for($j=$i+1;$j<count($array);$j++){
                 if($array[$i] > $array[$j]){
@@ -75,31 +76,73 @@ class Datos
        $cj = ($this->rango($array))/($this->clases($array));
        return  ceil($cj);
    }
+function Fa ($array)
+    {
+        $ini=min($array);
+        $cj = $this->anchoClase($array)-1;
+        $fin= $ini+$cj;
+         $pos = array();
+         $res='';
+        for ($i=1; $i <=($this->clases($array)) ; $i++) { 
+         $res.='<tr><td>';
+
+            $pos[$i] = $ini.'-'.$fin." ";
+            $res .=$pos[$i];
+
+             $ini=$fin+1;
+
+             if ($i == ($this->clases($array))) {
+                    $fin = max($array);
+
+                }else{
+
+                    $fin = $ini +$cj;
+                   }   
+                if ($fin !==max($array)) {
+                    $cont =1;
+                    while  ($fin==max($array))
+                    {
+                        $fin=$fin+$cont;
+                        $cont++;
+                    }
+                }
+                   $res.='</td></tr>';
+      }
+
+        return $res;
+
+    }
+
 
    function intervalo ($array)
-   {
-       $rango = anchoClase($array) - 1 ;
+    {
+        $ini=min($array);
+        $cj = $this->anchoClase($array)-1;
+        $fin= $ini+$cj;
+         $pos = array();
+         
+        for ($i=1; $i <=($this->clases($array)) ; $i++) { 
+         $res.='<tr><td>';
 
-        $ini = min($array)+$rango;
+            $pos[$i] = $ini.'-'.$fin." ";
+            $res .=$pos[$i];
 
-      $intervalo =  min ($array);
-      
-        for ($i=0; $i <count($array) ; $i++) { 
-            
-        }
-            return $intervalo;
-   }
+             $ini=$fin+1;
 
+             if ($i == ($this->clases($array))) {
+                    $fin = max($array);
 
+                }else{
 
+                    $fin = $ini +$cj;
+                   }   
+               
+      }
+                   $res.='</td>';
 
+        return $res;
 
-
-
-
-
-
-
+    }
 
 
 
@@ -112,12 +155,12 @@ class Datos
 
 
 // NO UTILIZADAS TODAVIA/...........................
-    public function getObtenerDatos()
+     function getObtenerDatos()
     {
         return $this->$obtenerDatos;
     }
 
-    public function setObtenerDatos($obtenerDatos)
+     function setObtenerDatos($obtenerDatos)
     {
         $this->$obtenerDatos= $obtenerDatos;
     }
