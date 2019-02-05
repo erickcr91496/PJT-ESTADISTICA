@@ -134,10 +134,10 @@ function Fa ($array)
 
                 }else{
 
-                    $fin = $ini +$cj;
+                    $fin = $ini +$cj; 
                    }   
                
-      }
+        }
                    $res.='</td>';
 
         return $res;

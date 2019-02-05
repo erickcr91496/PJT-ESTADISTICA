@@ -9,7 +9,7 @@ and open the template in the editor.
           $mensaje = $_SESSION['vector'];
           $ordenar = $_SESSION['ordenar'];
           $maximo  = $_SESSION['max'] ;
-            $clases  = $_SESSION['clases'] ;
+         $clases  = $_SESSION['clases'] ;
         $cj = $_SESSION['cj'];
         $intervalo = $_SESSION['intervalo'];
         $fa = $_SESSION['fa'];
@@ -67,43 +67,26 @@ and open the template in the editor.
                 </thead>
                 <tbody>
                 
-               <!--      <tr>
-                        <th scope="row">Class1</th>
-                        <td>asasa</td>
-                        <td>5555</td>
-                   
-                        <td></td>
-                    </tr> -->
-                        
                     <?php   
-                    //echo $fila = $_SESSION['filas'];
-                //    $min = min($ordenar);
-                //    $max =$min+$cj;
-
-                  //for ($i=1; $i<=$clases ; $i++)     { 
-
-                  //  echo " <tr> ";
-                                         
-                  
-                  echo $intervalo;
-
                     
-                  //  echo "<td>$fa</td>";
-                   
+                                         
+               // foreach ($array as $key ) {
+                      
+                
+                 echo $intervalo;
+                    
+                 echo "<td>sss</td>";
+
+                 echo "<td>sss</td>";
+
+                echo $fa; 
 
                   echo "</tr> ";
-                                        
-                 // }
+               // }                   
 
                     ?>
                 </tbody>
             </table>
-
-
-
-
-
-
 
 <!--***************************CUANTILES******************************************-->
 
